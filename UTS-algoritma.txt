@@ -102,7 +102,7 @@
                 alert("Gagal !, ukuran file kurang dari 3,5 mb");
                 return;
             } else {
-                alert("Berhasil")
+                alert("Berhasil");
             }
         })
     </script>
