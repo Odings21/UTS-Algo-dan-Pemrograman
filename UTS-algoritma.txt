@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File .PDF</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            padding: 5vh 0 3vh 0;
+            background-color: #CF0A0A;
+            color: white;
+        }
+
+        header h2:nth-child(3) {
+            padding: 0 0 3vh 0;
+        }
+
+        hr {
+            margin: auto;
+            width: 90%;
+        }
+
+        main {
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        
+        .tugas {
+            padding-bottom: 5px;
+            text-decoration: underline;
+        }
+
+        main p {
+            padding: 0 2vw 0 2vw;
+        }
+
+
+        main h2 {
+            padding: 3vh 0 3vh 0;
+            text-align: center;
+        }
+
+        main section {
+            padding: 2vw 3vh 2vw 3vh;
+        }
+
+        main section p {
+            padding: 5px;
+        }
+
+        form {
+            text-align: center;
+            padding-top: 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            h2 {
+                font-size: 16px;
+            }
+            main section {
+            padding: 3vw 3vh 3vw 3vh;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h2>UNIVERSITAS MUHAMMDIYAH CIREBON</h2>
+        <h2>FAKULTAS TEKNIK</h2>
+        <h2>TEKNIK INFORMATIKA</h2>
+        <hr>
+    </header>
+    <main>
+        <h2>Ujian Tengah Semester</h2>
+        <p class="tugas">Tugas</p>
+        <p>Buat source code upload dokumen .pdf dengan size minimal 3,5 mb</p>
+        <section>
+            <p>Nama  : Rifki Saifullah</p>
+            <p>NIM   : 220511145</p>
+            <p>Kelas : R5 / E</p>
+            <br>
+        </section>
+        <form action="">
+            <label for="">Masukkan file berekstensi .pdf</label>
+            <br>
+            <input type="file" name="" id="" accept="application/pdf" class="input">
+        </form>
+    </main>
+
+
+    <script>
+        const fileSize = document.querySelector(".input");
+        fileSize.addEventListener("change", function() {
+            if (fileSize.files[0].size < 3500000) {
+                alert("Gagal !, ukuran file kurang dari 3,5 mb");
+                return;
+            } else {
+                alert("Berhasil")
+            }
+        })
+    </script>
+</body>
+</html>
