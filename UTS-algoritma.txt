@@ -90,7 +90,7 @@
         <form action="">
             <label for="">Masukkan file berekstensi .pdf</label>
             <br>
-            <input type="file" name="" id="" accept="application/pdf" class="input">
+            <input type="file" name="" accept="application/pdf" class="input">
         </form>
     </main>
 
